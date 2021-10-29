@@ -1,17 +1,13 @@
-import { nanoid } from 'nanoid';
 import React from 'react';
 import { useSelector } from 'react-redux';
-import book from '../components/Book';
-
-const newBook = {
-  id: nanoid(),
-  title: '5 am morning club',
-  category: 'personal development',
-};
+import Book from '../components/Book';
 
 const BooksList = () => {
-  const { books } = useSelector((state) => state.books);
-  const displayBook = book(newBook);
+  const { books } = useSelector((state) => state);
+  const displayBook = books.map((book) => (
+    <Book key={book.id} book={book} />
+  ));
+
   return (
     <div className="booklist">
       <table className="booklist-table">
