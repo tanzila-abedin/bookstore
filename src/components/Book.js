@@ -5,7 +5,7 @@ const Book = ({ book }) => {
   return (
     <tr className="book-into">
       <td className="id">{id}</td>
-      <td classNane="title">{title}</td>
+      <td className="title">{title}</td>
       <td className="category">{category}</td>
     </tr>
   );
