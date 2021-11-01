@@ -2,6 +2,30 @@
 
 Click here to view Live [Magic-books](https://tanzila-magic-books.herokuapp.com/).
 
+  
+## Demo
+
+[Click here to view the live demo](https://bookstore-rb.herokuapp.com/)
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/tanzila-abedin/bookstore.git
+```
+
+Install dependencies
+
+```bash
+  npm i
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
 👤 **Tanzila**
 
 ![Tanzila's GitHub stats](https://github-readme-stats.vercel.app/api?username=tanzila-abedin&count_private=true&theme=dark&show_icons=true)
