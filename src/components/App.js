@@ -3,10 +3,9 @@ import BooksForm from '../containers/BooksForm';
 
 const App = () => (
   <>
-    <div>
-      <BooksList />
-      <BooksForm />
-    </div>
+
+    <BooksList />
+    <BooksForm />
 
   </>
 );
