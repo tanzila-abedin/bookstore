@@ -1,6 +1,28 @@
 # Magic-Books with REDUX
 
+Magic-books Inc. is a fictional company based in Germany. They have requested  me help to build the front-end of an application that will help them organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore I decided to build it with React & Redux.
+  
+## Demo
 Click here to view Live [Magic-books](https://tanzila-magic-books.herokuapp.com/).
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/tanzila-abedin/bookstore.git
+```
+
+Install dependencies
+
+```bash
+  npm i
+```
+
+Start the server
+
+```bash
+  npm run start
+```
 
 👤 **Tanzila**
 
