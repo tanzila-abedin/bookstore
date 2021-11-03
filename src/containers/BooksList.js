@@ -41,14 +41,6 @@ const BooksList = () => {
     <div className="booklist">
       <CategoryFilter options={options} handleChange={handleFilterChange} />
       <table className="booklist-table">
-        <thead>
-          <tr className="booklist-row">
-            <th className="booklist-header">ID</th>
-            <th className="booklist-title">Title Of Book</th>
-            <th className="booklist-category">Category Of Book</th>
-            <th className="booklist-remove">Remove</th>
-          </tr>
-        </thead>
         <tbody>
           {displayFilteredBooks()}
         </tbody>
