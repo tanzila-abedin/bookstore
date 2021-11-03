@@ -27,11 +27,12 @@ const BooksForm = () => {
   };
 
   return (
-    <div className="booklist">
+    <div className="booklist pb-5 ">
+      <h2 className="add-book"> ADD NEW BOOK </h2>
       <form onSubmit={(e) => handleChange(e)}>
-        <input type="text" id="title" name="title" placeholder="Book Title" onChange={(e) => setTitle(e.target.value)} />
-        <Select options={option} onChange={(e) => setCategory(e.value)} />
-        <button type="submit">Submit</button>
+        <input className="book-input" type="text" id="title" name="title" placeholder="Book Title" onChange={(e) => setTitle(e.target.value)} />
+        <Select className="select-dropdown-2" options={option} onChange={(e) => setCategory(e.value)} />
+        <button className="form-submit btn btn btn-lg" type="submit">Submit</button>
       </form>
     </div>
   );
