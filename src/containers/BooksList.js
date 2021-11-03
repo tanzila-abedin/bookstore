@@ -1,22 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
-import { removeBook } from '../actions';
+import { changeFilter, removeBook } from '../actions';
+import CategoryFilter from '../components/Categoryfilter';
 
 const BooksList = () => {
-  const { books } = useSelector((state) => state);
+  const { books, filter } = useSelector((state) => state);
+  const [options, setOptions] = useState();
+
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const categories = ['All', ...books.map((book) => book.category)];
+    setOptions(categories.map((category) => ({
+      value: category,
+      label: category,
+    })));
+  }, [books]);
+
+  const handleFilterChange = (e) => {
+    dispatch(changeFilter(e.value));
+  };
 
   const handleRemoveBook = (book) => {
     dispatch(removeBook(book));
   };
 
-  const displayBook = books.map((book) => (
+  const displayBooks = (books) => books.map((book) => (
     <Book key={book.id} book={book} removeBook={handleRemoveBook} />
   ));
 
+  const displayFilteredBooks = () => {
+    if (filter === '' || filter === 'All') {
+      return displayBooks(books);
+    }
+    return displayBooks(books.filter((book) => book.category === filter));
+  };
+
   return (
     <div className="booklist">
+      <CategoryFilter options={options} handleChange={handleFilterChange} />
       <table className="booklist-table">
         <thead>
           <tr className="booklist-row">
@@ -27,7 +50,7 @@ const BooksList = () => {
           </tr>
         </thead>
         <tbody>
-          {displayBook}
+          {displayFilteredBooks()}
         </tbody>
       </table>
     </div>
