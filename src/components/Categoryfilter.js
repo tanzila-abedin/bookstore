@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import Select from 'react-select';
 
 const CategoryFilter = ({ options, handleChange }) => (
-  <div>
-    <p> Select Category </p>
-    <Select options={options} onChange={(e) => handleChange(e)} required />
+  <div className="pt-4 pb-4">
+    <Select className="select-dropdown" options={options} onChange={(e) => handleChange(e)} required />
   </div>
 );
 
