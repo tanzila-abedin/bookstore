@@ -13,7 +13,7 @@ const Book = ({ book, removeBook }) => {
           {title}
         </p>
         <p className="id text-link font-robo font-light md:text-sm mb-4">
-          ID:
+          Author:
           {' '}
           {id}
         </p>

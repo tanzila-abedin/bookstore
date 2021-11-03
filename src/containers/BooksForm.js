@@ -1,8 +1,9 @@
 import Select from 'react-select';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { nanoid } from 'nanoid';
 import { createBook } from '../actions';
+
+const faker = require('faker');
 
 const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 const option = categories.map((category) => ({
@@ -14,7 +15,7 @@ const BooksForm = () => {
   const [title, setTitle] = useState();
   const [category, setCategory] = useState();
   const dispatch = useDispatch();
-  const id = nanoid();
+  const id = faker.name.findName();
 
   const handleChange = (e) => {
     e.preventDefault();
