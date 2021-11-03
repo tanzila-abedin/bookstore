@@ -1,27 +1,310 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+
 body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+}
+header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat Bold', sans-serif;
+  height: 5.938rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+header .header-text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3rem;
 }
+
+header .header-text > * {
+  margin-right: 1.5rem;
+}
+
+header .bookstore-cms {
+  margin-left: 4rem;
+  color: #0290ff;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+header .books {
+  color: #121212;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+}
+
+header .categories {
+  color: #121212;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  opacity: 0.5;
+}
+
+header .icon {
+  margin-right: 8rem;
+  color: #0290ff;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+}
+
+.select-dropdown {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.select-dropdown-2,
+.form-submit {
+  width: 18%;
+}
+
+.book-input {
+  width: 60%;
+  background-color: #fff;
+  border-color: #e5e7eb;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  line-height: 24px;
+  padding: 12px 16px;
+}
+
+.lesson-panel {
+  width: 70rem;
+  height: 12rem;
+  margin: 1rem  0 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px rgb(240, 240, 240);
+}
+
+.book-info {
+  grid-area: auto / span 3 / auto / span 3;
+  line-height: 24px;
+  text-align: left;
+}
+
+.category {
+  color: #121212;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  margin: 0 0 4px;
+}
+
+.id {
+  color: #4386bf;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0  0 16px;
+  text-align: left;
+}
+
+.button-grp {
+  margin: 32px 0 0;
+}
+
+.remove {
+  padding: 0 16px;
+  color: #4386bf;
+}
+
+.comments .edit .remove {
+  align-items: flex-start;
+  display: inline-block;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+
+.comments {
+  padding: 0 16px 0 0;
+  color: #4386bf;
+  border-right: 1px solid #e5e7eb;
+}
+
+.edit {
+  padding: 0 0 0 16px;
+  color: #4386bf;
+  border-left: 1px solid #e5e7eb;
+}
+
+.progress-info {
+  align-items: center;
+  display: flex;
+  grid-area: auto / span 2 / auto / span 2;
+  justify-content: center;
+  line-height: 24px;
+  text-align: left;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* .book-progress {
+  display: flex;
+  border-right: 0.1px solid rgb(240, 240, 240);
+  padding-right: 1rem;
+} */
+
+.circular {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  transform: scale(0.75);
+}
+
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.circular .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0290ff;
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 100%;
+  clip: rect(0, 100px, 100px, 50px);
+}
+
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  clip: rect(0, 50px, 100px, 0);
+  background: #0290ff;
+}
+
+.circle .left .progress {
+  z-index: 1;
+  animation: left 4s linear both;
+}
+
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.circle .right {
+  transform: rotate(180deg);
+  z-index: 3;
+}
+
+.circle .right .progress {
+  animation: right 4s linear both;
+  animation-delay: 4s;
+}
+
+@keyframes right {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.percent {
+  width: 2.938rem;
+  height: 2.438rem;
+  margin: 1rem 7.063rem 0 0.688rem;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.add-book {
+  color: #888;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 0 16px;
+}
+
+.form-submit,
+.update-btn {
+  background-color: #0290ff;
+  color: #fff;
+}
+
+.para-1 {
+  color: #121212;
+  font-family: 'Roboto Slab', serif;
+}
+
