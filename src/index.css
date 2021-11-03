@@ -2,33 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 
-
 body {
   background-color: whitesmoke;
 }
+
 header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-color: white;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: 'Montserrat Bold', sans-serif;
   height: 5.938rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
 header .header-text {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 3rem;
 }
 
@@ -307,4 +304,3 @@ form {
   color: #121212;
   font-family: 'Roboto Slab', serif;
 }
-
