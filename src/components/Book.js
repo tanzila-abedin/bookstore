@@ -36,7 +36,7 @@ const Book = ({ book, removeBook }) => {
           </div>
         </div>
         <div className="count">
-          <p className="percent">75%</p>
+          <p className="percent">88%</p>
           <p className="completed"> completed</p>
         </div>
       </div>
