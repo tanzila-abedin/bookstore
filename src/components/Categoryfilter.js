@@ -4,7 +4,7 @@ import Select from 'react-select';
 
 const CategoryFilter = ({ options, handleChange }) => (
   <div className="pt-4 pb-4">
-    <Select className="select-dropdown" options={options} onChange={(e) => handleChange(e)} required />
+    <Select className="select-dropdown" placeholder="Categories" options={options} onChange={(e) => handleChange(e)} required />
   </div>
 );
 
