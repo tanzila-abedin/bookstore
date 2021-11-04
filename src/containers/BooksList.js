@@ -40,11 +40,11 @@ const BooksList = () => {
   return (
     <div className="booklist">
       <CategoryFilter options={options} handleChange={handleFilterChange} />
-      <table className="booklist-table">
-        <tbody>
-          {displayFilteredBooks()}
-        </tbody>
-      </table>
+      <div className="booklist-table">
+
+        {displayFilteredBooks()}
+
+      </div>
     </div>
   );
 };

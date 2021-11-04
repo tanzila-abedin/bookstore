@@ -5,7 +5,7 @@ import Header from './Header';
 const App = () => (
   <>
     <Header />
-    <div className="container ">
+    <div className="container w-100 ">
       <BooksList />
       <BooksForm />
     </div>
