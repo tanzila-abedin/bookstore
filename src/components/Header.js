@@ -24,18 +24,20 @@ const Header = () => {
 
   return (
     <header>
-      <div className="header-text">
-        <h1 className="bookstore-cms">Bookstore CMS</h1>
-        <p className="books pt-2">BOOKS</p>
-        <p className="categories pt-2">
-          {' '}
-          <CategoryFilter options={options} handleChange={handleFilterChange} />
-        </p>
-      </div>
-      <div className="icon-frame pb-2">
-        <i className="icon">
-          <BsFillPersonFill size={25} />
-        </i>
+      <div className="head-wrap">
+        <div className="header-text">
+          <h1 className="bookstore-cms">Bookstore CMS</h1>
+          <p className="books pt-2">BOOKS</p>
+          <p className="categories pt-2">
+            {' '}
+            <CategoryFilter options={options} handleChange={handleFilterChange} />
+          </p>
+        </div>
+        <div className="icon-frame pb-2">
+          <i className="icon">
+            <BsFillPersonFill size={25} />
+          </i>
+        </div>
       </div>
     </header>
   );
