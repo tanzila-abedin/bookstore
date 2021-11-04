@@ -32,7 +32,7 @@ const Header = () => {
           <CategoryFilter options={options} handleChange={handleFilterChange} />
         </p>
       </div>
-      <div className="icon-frame">
+      <div className="icon-frame pb-2">
         <i className="icon">
           <BsFillPersonFill size={25} />
         </i>
