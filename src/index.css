@@ -22,10 +22,10 @@ header {
 }
 
 header .header-text {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  /* -ms-flex-align: center; */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  display: -webkit-box;
   margin-left: 3rem;
 }
 
